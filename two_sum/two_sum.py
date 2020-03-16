@@ -9,3 +9,5 @@ def twoNumberSum(numbers, targetSum):
         if targetSum - number in numbers:
             combinations.append([number, targetSum-number])
     return combinations
+
+
