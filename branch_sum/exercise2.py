@@ -22,4 +22,7 @@ def factor(x):
         return 1
     else:
         return x*factor(x-1)
+
+
+factor(5)
     
