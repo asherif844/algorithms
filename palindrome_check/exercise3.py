@@ -11,4 +11,3 @@ def isPalindrome(string):
         rightIdx-=1
     return True
 
-isPalidrome(sample_string)
