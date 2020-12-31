@@ -5,6 +5,5 @@
 		}
 	],
 	"settings": {
-		"python.pythonPath": "/opt/miniconda3/envs/python36/bin/python"
 	}
 }
