@@ -1,3 +1,0 @@
-def firstDuplicateValue():
-    pass
-
