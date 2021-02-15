@@ -1,0 +1,11 @@
+{
+    "competitions": [
+      ["HTML", "Java"],
+      ["Java", "Python"],
+      ["Python", "HTML"],
+      ["C#", "Python"],
+      ["Java", "C#"],
+      ["C#", "HTML"]
+    ],
+    "results": [0, 1, 1, 1, 0, 1]
+  }
