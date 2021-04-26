@@ -1,10 +1,28 @@
 def validStartingCity(distances, fuel, mpg):
-    for i in range(len(distances)):
-        dist = distances[i]
-        dist+= dist
-        
+    cityIdx = len(distances) - 1
+    finalCityIdx = reorderPair(distances, fuel, mpg, cityIdx)
+
+    return finalCityIdx
+
+
+def reorderPair(distances, fuel, mpg, cityIdx):
+    fuelAvailable = 0
+    distanceToTravel = 0
+    cities = len(distances)
+    for i in range(cities):
+        if cityIdx == cities - 1:
+            return cityIdx
+        fuelAvailable += fuel[i] * mpg
+        distanceToTravel += distances[i]
+        if distanceToTravel > fuelAvailable:
+            removedDistance = distances.pop(0)
+            removedFuel = fuel.pop(0)
+            distances.append(removedDistance)
+            fuel.append(removedFuel)
+            cityIdx += 1
+            reorderPair(distances, fuel, mpg, cityIdx)
     
-    return dist
+    return cityIdx
 
 
 distances = [5, 25, 15, 10, 15]
