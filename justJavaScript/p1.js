@@ -1,0 +1,7 @@
+console.log(2)
+console.log('hello')
+console.log(undefined)
+console.log({})
+console.log([])
+console.log(x=> x * 2)
+console.log(5)
